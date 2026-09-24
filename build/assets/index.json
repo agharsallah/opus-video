@@ -1,0 +1,611 @@
+{
+ "fish": {
+  "w": 306,
+  "h": 830,
+  "footY": 803,
+  "sticker": true,
+  "sheet": "creature 1"
+ },
+ "birdsOnWire": {
+  "w": 1378,
+  "h": 952,
+  "footY": 939,
+  "sticker": true,
+  "sheet": "creature 1"
+ },
+ "roundBird": {
+  "w": 554,
+  "h": 453,
+  "footY": 424,
+  "sticker": true,
+  "sheet": "creature 1"
+ },
+ "fluffBird": {
+  "w": 550,
+  "h": 592,
+  "footY": 566,
+  "sticker": true,
+  "sheet": "creature 1"
+ },
+ "fox": {
+  "w": 745,
+  "h": 1105,
+  "footY": 1057,
+  "sticker": true,
+  "sheet": "creature 1"
+ },
+ "cat": {
+  "w": 869,
+  "h": 782,
+  "footY": 770,
+  "sticker": true,
+  "sheet": "creature 1"
+ },
+ "jellyOrange": {
+  "w": 583,
+  "h": 1400,
+  "footY": 1377,
+  "sticker": true,
+  "sheet": "creature 1"
+ },
+ "sleepyBee": {
+  "w": 512,
+  "h": 468,
+  "footY": 457,
+  "sticker": true,
+  "sheet": "creature 1"
+ },
+ "windowCats": {
+  "w": 833,
+  "h": 949,
+  "footY": 914,
+  "sticker": true,
+  "sheet": "creature 1"
+ },
+ "ladybug": {
+  "w": 592,
+  "h": 717,
+  "footY": 685,
+  "sticker": true,
+  "sheet": "creature 1"
+ },
+ "bunny": {
+  "w": 407,
+  "h": 651,
+  "footY": 623,
+  "sticker": true,
+  "sheet": "creature 2"
+ },
+ "stickChick": {
+  "w": 275,
+  "h": 681,
+  "footY": 654,
+  "sticker": true,
+  "sheet": "creature 2"
+ },
+ "bunnyHead": {
+  "w": 566,
+  "h": 452,
+  "footY": 425,
+  "sticker": true,
+  "sheet": "creature 2"
+ },
+ "butterflyFriend": {
+  "w": 740,
+  "h": 1042,
+  "footY": 1016,
+  "sticker": true,
+  "sheet": "creature 2"
+ },
+ "mouse": {
+  "w": 531,
+  "h": 844,
+  "footY": 818,
+  "sticker": true,
+  "sheet": "creature 2"
+ },
+ "grasshopper": {
+  "w": 828,
+  "h": 1265,
+  "footY": 1238,
+  "sticker": true,
+  "sheet": "creature 2"
+ },
+ "donkey": {
+  "w": 869,
+  "h": 502,
+  "footY": 474,
+  "sticker": true,
+  "sheet": "creature 2"
+ },
+ "owlBlue": {
+  "w": 392,
+  "h": 656,
+  "footY": 630,
+  "sticker": true,
+  "sheet": "creature 2"
+ },
+ "owlBrown": {
+  "w": 440,
+  "h": 732,
+  "footY": 705,
+  "sticker": true,
+  "sheet": "creature 2"
+ },
+ "duck": {
+  "w": 430,
+  "h": 670,
+  "footY": 643,
+  "sticker": true,
+  "sheet": "creature 2"
+ },
+ "beanBird": {
+  "w": 463,
+  "h": 731,
+  "footY": 704,
+  "sticker": true,
+  "sheet": "creature 2"
+ },
+ "chick1": {
+  "w": 519,
+  "h": 521,
+  "footY": 495,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "chick2": {
+  "w": 452,
+  "h": 534,
+  "footY": 508,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "chick3": {
+  "w": 509,
+  "h": 543,
+  "footY": 517,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "chick4": {
+  "w": 415,
+  "h": 510,
+  "footY": 484,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "bee1": {
+  "w": 570,
+  "h": 621,
+  "footY": 599,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "bee2": {
+  "w": 573,
+  "h": 747,
+  "footY": 722,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "bee3": {
+  "w": 733,
+  "h": 728,
+  "footY": 701,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "bee4": {
+  "w": 666,
+  "h": 785,
+  "footY": 759,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "kittenSit": {
+  "w": 369,
+  "h": 417,
+  "footY": 389,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "kittenLook": {
+  "w": 426,
+  "h": 361,
+  "footY": 333,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "kittenBack": {
+  "w": 432,
+  "h": 350,
+  "footY": 324,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "kittenSleep": {
+  "w": 415,
+  "h": 326,
+  "footY": 298,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "kittenStand": {
+  "w": 290,
+  "h": 428,
+  "footY": 400,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "kittenWalk": {
+  "w": 523,
+  "h": 290,
+  "footY": 263,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "octoShy": {
+  "w": 406,
+  "h": 544,
+  "footY": 517,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "octoWow": {
+  "w": 439,
+  "h": 526,
+  "footY": 498,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "octoSad": {
+  "w": 416,
+  "h": 486,
+  "footY": 459,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "octoLove": {
+  "w": 543,
+  "h": 622,
+  "footY": 592,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "jellyGreen": {
+  "w": 473,
+  "h": 664,
+  "footY": 636,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "jellySquid": {
+  "w": 314,
+  "h": 708,
+  "footY": 680,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "jellyYellow": {
+  "w": 409,
+  "h": 610,
+  "footY": 594,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "jellyBell": {
+  "w": 401,
+  "h": 757,
+  "footY": 742,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "jellyPink": {
+  "w": 385,
+  "h": 441,
+  "footY": 415,
+  "sticker": true,
+  "sheet": "creature 3"
+ },
+ "treehouse": {
+  "w": 2139,
+  "h": 2336,
+  "footY": 2335,
+  "sticker": true,
+  "sheet": "creature 4"
+ },
+ "houseBlue": {
+  "w": 691,
+  "h": 621,
+  "footY": 594,
+  "sticker": true,
+  "sheet": "creature 4"
+ },
+ "houseStone": {
+  "w": 525,
+  "h": 413,
+  "footY": 386,
+  "sticker": true,
+  "sheet": "creature 4"
+ },
+ "houseCarrot": {
+  "w": 814,
+  "h": 987,
+  "footY": 960,
+  "sticker": true,
+  "sheet": "creature 4"
+ },
+ "houseMushroom": {
+  "w": 562,
+  "h": 524,
+  "footY": 498,
+  "sticker": true,
+  "sheet": "creature 4"
+ },
+ "housesRow": {
+  "w": 956,
+  "h": 692,
+  "footY": 664,
+  "sticker": true,
+  "sheet": "creature 4"
+ },
+ "houseAvocado": {
+  "w": 804,
+  "h": 790,
+  "footY": 763,
+  "sticker": true,
+  "sheet": "creature 4"
+ },
+ "flowerStems": {
+  "w": 614,
+  "h": 1648,
+  "footY": 1625,
+  "sticker": true,
+  "sheet": "flowers"
+ },
+ "lavender": {
+  "w": 1055,
+  "h": 803,
+  "footY": 776,
+  "sticker": true,
+  "sheet": "flowers"
+ },
+ "dandelion": {
+  "w": 449,
+  "h": 566,
+  "footY": 540,
+  "sticker": true,
+  "sheet": "flowers"
+ },
+ "butterflyPink": {
+  "w": 480,
+  "h": 709,
+  "footY": 681,
+  "sticker": true,
+  "sheet": "flowers"
+ },
+ "bellFlowers": {
+  "w": 384,
+  "h": 653,
+  "footY": 628,
+  "sticker": true,
+  "sheet": "flowers"
+ },
+ "roseBush": {
+  "w": 516,
+  "h": 546,
+  "footY": 521,
+  "sticker": true,
+  "sheet": "flowers"
+ },
+ "forgetMeNot": {
+  "w": 578,
+  "h": 849,
+  "footY": 825,
+  "sticker": true,
+  "sheet": "flowers"
+ },
+ "butterflyGreen": {
+  "w": 534,
+  "h": 499,
+  "footY": 472,
+  "sticker": true,
+  "sheet": "flowers"
+ },
+ "butterflyBlue": {
+  "w": 469,
+  "h": 554,
+  "footY": 535,
+  "sticker": true,
+  "sheet": "flowers"
+ },
+ "flowerBush": {
+  "w": 520,
+  "h": 698,
+  "footY": 672,
+  "sticker": true,
+  "sheet": "flowers"
+ },
+ "sunflower": {
+  "w": 1200,
+  "h": 1028,
+  "footY": 999,
+  "sticker": true,
+  "sheet": "flowers"
+ },
+ "dragonfly": {
+  "w": 504,
+  "h": 454,
+  "footY": 441,
+  "sticker": true,
+  "sheet": "flowers"
+ },
+ "butterflyPurple": {
+  "w": 828,
+  "h": 861,
+  "footY": 833,
+  "sticker": true,
+  "sheet": "flowers"
+ },
+ "poppy": {
+  "w": 399,
+  "h": 764,
+  "footY": 738,
+  "sticker": true,
+  "sheet": "flowers"
+ },
+ "lakeReeds": {
+  "w": 1145,
+  "h": 1594,
+  "footY": 1572,
+  "sticker": false,
+  "sheet": "nature"
+ },
+ "pineIsland": {
+  "w": 1255,
+  "h": 1180,
+  "footY": 1152,
+  "sticker": false,
+  "sheet": "nature"
+ },
+ "beach": {
+  "w": 1307,
+  "h": 1367,
+  "footY": 1349,
+  "sticker": false,
+  "sheet": "nature"
+ },
+ "pondRain": {
+  "w": 1149,
+  "h": 738,
+  "footY": 652,
+  "sticker": false,
+  "sheet": "nature"
+ },
+ "sunsetBoat": {
+  "w": 1042,
+  "h": 1110,
+  "footY": 1099,
+  "sticker": false,
+  "sheet": "nature 2"
+ },
+ "sunStripes": {
+  "w": 591,
+  "h": 530,
+  "footY": 517,
+  "sticker": false,
+  "sheet": "nature 2"
+ },
+ "waterfallSun": {
+  "w": 1346,
+  "h": 2321,
+  "footY": 2239,
+  "sticker": false,
+  "sheet": "nature 2"
+ },
+ "sunsetSea": {
+  "w": 1254,
+  "h": 823,
+  "footY": 775,
+  "sticker": false,
+  "sheet": "nature 2"
+ },
+ "wave": {
+  "w": 1394,
+  "h": 747,
+  "footY": 696,
+  "sticker": false,
+  "sheet": "nature 2"
+ },
+ "carrot": {
+  "w": 1078,
+  "h": 1371,
+  "footY": 1345,
+  "sticker": true,
+  "sheet": "veg"
+ },
+ "turnip": {
+  "w": 688,
+  "h": 765,
+  "footY": 736,
+  "sticker": true,
+  "sheet": "veg"
+ },
+ "pumpkin": {
+  "w": 588,
+  "h": 398,
+  "footY": 371,
+  "sticker": true,
+  "sheet": "veg"
+ },
+ "mushroom": {
+  "w": 527,
+  "h": 504,
+  "footY": 476,
+  "sticker": true,
+  "sheet": "veg"
+ },
+ "watermelon": {
+  "w": 482,
+  "h": 373,
+  "footY": 345,
+  "sticker": true,
+  "sheet": "veg"
+ },
+ "avocado": {
+  "w": 519,
+  "h": 791,
+  "footY": 761,
+  "sticker": true,
+  "sheet": "veg"
+ },
+ "corn": {
+  "w": 753,
+  "h": 865,
+  "footY": 832,
+  "sticker": true,
+  "sheet": "veg"
+ },
+ "grapes": {
+  "w": 786,
+  "h": 1217,
+  "footY": 1188,
+  "sticker": true,
+  "sheet": "veg"
+ },
+ "birdPurple": {
+  "w": 474,
+  "h": 852,
+  "footY": 826,
+  "sticker": true,
+  "sheet": "veg"
+ },
+ "peekSun": {
+  "w": 440,
+  "h": 902,
+  "footY": 879,
+  "sticker": true,
+  "sheet": "nature 2"
+ },
+ "cloud1": {
+  "w": 253,
+  "h": 161,
+  "footY": 133,
+  "sticker": true,
+  "sheet": "nature 2"
+ },
+ "cloud2": {
+  "w": 317,
+  "h": 168,
+  "footY": 139,
+  "sticker": true,
+  "sheet": "nature 2"
+ },
+ "waveProp": {
+  "w": 1372,
+  "h": 803,
+  "footY": 665,
+  "sticker": true,
+  "sheet": "nature 2"
+ }
+}
