@@ -1,0 +1,140 @@
+// Every drawing used in the film, located on its sketchbook page.
+// Boxes are [x, y, w, h] as fractions of the page (from build/segment overlays).
+//   mode 'object': keep only ink blobs centred inside the box (isolates a
+//                  character even when neighbours poke into the box)
+//   mode 'scene' : keep everything inside the box (landscapes, washes)
+//   exclude      : boxes whose blobs must be dropped (e.g. the pumpkin that
+//                  sits inside the carrot's box)
+export const ASSETS = {
+  // --- creature 1: calm watercolour animals --------------------------------
+  fish: { sheet: 'creature 1', box: [0.330, 0.019, 0.111, 0.219] },
+  birdsOnWire: { sheet: 'creature 1', box: [0.497, 0.047, 0.495, 0.254] },
+  roundBird: { sheet: 'creature 1', box: [0.074, 0.094, 0.198, 0.119] },
+  fluffBird: { sheet: 'creature 1', box: [0.394, 0.314, 0.198, 0.156] },
+  fox: { sheet: 'creature 1', box: [0.008, 0.330, 0.274, 0.291] },
+  cat: { sheet: 'creature 1', box: [0.680, 0.398, 0.319, 0.180] },
+  jellyOrange: { sheet: 'creature 1', box: [0.720, 0.650, 0.220, 0.345] },
+  sleepyBee: { sheet: 'creature 1', box: [0.376, 0.577, 0.184, 0.128] },
+  windowCats: { sheet: 'creature 1', box: [0.011, 0.732, 0.274, 0.268] },
+  ladybug: { sheet: 'creature 1', box: [0.407, 0.772, 0.214, 0.188] },
+
+  // --- creature 2: goofy inky critters ---------------------------------------
+  bunny: { sheet: 'creature 2', box: [0.327, 0.007, 0.147, 0.171] },
+  stickChick: { sheet: 'creature 2', box: [0.132, 0.017, 0.101, 0.178] },
+  bunnyHead: { sheet: 'creature 2', box: [0.553, 0.019, 0.204, 0.119] },
+  butterflyFriend: { sheet: 'creature 2', box: [0.734, 0.109, 0.266, 0.285] },
+  mouse: { sheet: 'creature 2', box: [0.451, 0.187, 0.192, 0.222] },
+  grasshopper: { sheet: 'creature 2', box: [0.035, 0.243, 0.297, 0.331] },
+  donkey: { sheet: 'creature 2', box: [0.620, 0.430, 0.313, 0.133] },
+  owlBlue: { sheet: 'creature 2', box: [0.399, 0.541, 0.141, 0.173] },
+  owlBrown: { sheet: 'creature 2', box: [0.091, 0.645, 0.159, 0.192] },
+  duck: { sheet: 'creature 2', box: [0.597, 0.651, 0.155, 0.176] },
+  beanBird: { sheet: 'creature 2', box: [0.294, 0.806, 0.167, 0.192] },
+
+  // --- creature 3: character sheets (poses!) ---------------------------------
+  chick1: { sheet: 'creature 3', box: [0.066, 0.013, 0.180, 0.139] },
+  chick2: { sheet: 'creature 3', box: [0.245, 0.013, 0.140, 0.150] },
+  chick3: { sheet: 'creature 3', box: [0.385, 0.013, 0.165, 0.150] },
+  chick4: { sheet: 'creature 3', box: [0.555, 0.013, 0.145, 0.150] },
+  bee1: { sheet: 'creature 3', box: [0.012, 0.164, 0.204, 0.165] },
+  bee2: { sheet: 'creature 3', box: [0.225, 0.147, 0.200, 0.204], grow: 3 },
+  bee3: { sheet: 'creature 3', box: [0.425, 0.147, 0.251, 0.204], grow: 3 },
+  bee4: { sheet: 'creature 3', box: [0.689, 0.162, 0.239, 0.208] },
+  kittenSit: { sheet: 'creature 3', box: [0.026, 0.407, 0.134, 0.111], grow: 5 },
+  kittenLook: { sheet: 'creature 3', box: [0.164, 0.427, 0.154, 0.096], grow: 5 },
+  kittenBack: { sheet: 'creature 3', box: [0.359, 0.444, 0.155, 0.093] },
+  kittenSleep: { sheet: 'creature 3', box: [0.514, 0.466, 0.149, 0.086] },
+  kittenStand: { sheet: 'creature 3', box: [0.699, 0.447, 0.106, 0.113] },
+  kittenWalk: { sheet: 'creature 3', box: [0.801, 0.481, 0.189, 0.077] },
+  octoShy: { sheet: 'creature 3', box: [0.027, 0.590, 0.158, 0.144] },
+  octoWow: { sheet: 'creature 3', box: [0.220, 0.598, 0.158, 0.139] },
+  octoSad: { sheet: 'creature 3', box: [0.417, 0.617, 0.150, 0.128] },
+  octoLove: { sheet: 'creature 3', box: [0.613, 0.600, 0.195, 0.165] },
+  jellyGreen: { sheet: 'creature 3', box: [0.029, 0.793, 0.171, 0.175] },
+  jellySquid: { sheet: 'creature 3', box: [0.217, 0.783, 0.114, 0.186] },
+  jellyYellow: { sheet: 'creature 3', box: [0.356, 0.839, 0.148, 0.161] },
+  jellyBell: { sheet: 'creature 3', box: [0.564, 0.801, 0.145, 0.199] },
+  jellyPink: { sheet: 'creature 3', box: [0.771, 0.833, 0.139, 0.117] },
+
+  // --- creature 4: the village ----------------------------------------------
+  treehouse: { sheet: 'creature 4', box: [0.0, 0.0, 0.76, 0.578], mode: 'scene', photoEdge: true, sticker: true, stickerClose: 30,
+    exclude: [[0.735, 0.19, 0.27, 0.18], [0.64, 0.40, 0.36, 0.18]] },
+  houseBlue: { sheet: 'creature 4', box: [0.742, 0.201, 0.250, 0.156] },
+  houseStone: { sheet: 'creature 4', box: [0.656, 0.413, 0.190, 0.104] },
+  houseCarrot: { sheet: 'creature 4', box: [0.704, 0.548, 0.294, 0.247] },
+  houseMushroom: { sheet: 'creature 4', box: [0.469, 0.596, 0.202, 0.132] },
+  housesRow: { sheet: 'creature 4', box: [0.053, 0.657, 0.345, 0.173] },
+  houseAvocado: { sheet: 'creature 4', box: [0.366, 0.784, 0.290, 0.197] },
+
+  // --- flowers --------------------------------------------------------------
+  flowerStems: { sheet: 'flowers', box: [0.071, 0.056, 0.220, 0.439] },
+  lavender: { sheet: 'flowers', box: [0.459, 0.060, 0.379, 0.215] },
+  dandelion: { sheet: 'flowers', box: [0.825, 0.061, 0.163, 0.152] },
+  butterflyPink: { sheet: 'flowers', box: [0.292, 0.103, 0.172, 0.189] },
+  bellFlowers: { sheet: 'flowers', box: [0.831, 0.308, 0.140, 0.175] },
+  roseBush: { sheet: 'flowers', box: [0.369, 0.360, 0.186, 0.147] },
+  forgetMeNot: { sheet: 'flowers', box: [0.642, 0.362, 0.209, 0.227] },
+  butterflyGreen: { sheet: 'flowers', box: [0.459, 0.495, 0.192, 0.134] },
+  butterflyBlue: { sheet: 'flowers', box: [0.032, 0.527, 0.170, 0.148] },
+  flowerBush: { sheet: 'flowers', box: [0.225, 0.580, 0.189, 0.187] },
+  sunflower: { sheet: 'flowers', box: [0.479, 0.613, 0.430, 0.270] },
+  dragonfly: { sheet: 'flowers', box: [0.630, 0.880, 0.190, 0.120] },
+  butterflyPurple: { sheet: 'flowers', box: [0.0, 0.764, 0.296, 0.230] },
+  poppy: { sheet: 'flowers', box: [0.324, 0.775, 0.144, 0.205] },
+
+  // --- landscapes -----------------------------------------------------------
+  lakeReeds: { sheet: 'nature', box: [0.0, 0.094, 0.405, 0.447], mode: 'scene' },
+  pineIsland: { sheet: 'nature', box: [0.415, 0.140, 0.450, 0.380], mode: 'scene' },
+  beach: { sheet: 'nature', box: [0.019, 0.588, 0.468, 0.391], mode: 'scene' },
+  pondRain: { sheet: 'nature', box: [0.581, 0.676, 0.419, 0.200], mode: 'scene' },
+  sunsetBoat: { sheet: 'nature 2', box: [0.405, 0.015, 0.375, 0.319], mode: 'scene' },
+  sunStripes: { sheet: 'nature 2', box: [0.066, 0.064, 0.225, 0.160], mode: 'scene' },
+  waterfallSun: { sheet: 'nature 2', box: [0.494, 0.344, 0.473, 0.654], mode: 'scene' },
+  sunsetSea: { sheet: 'nature 2', box: [0.060, 0.376, 0.440, 0.232], mode: 'scene' },
+  peekSun: { sheet: 'nature 2', box: [0.505, 0.752, 0.112, 0.232], grow: 4, edgeRule: false },
+  cloud1: { sheet: 'nature 2', box: [0.090, 0.418, 0.082, 0.042], grow: 4 },
+  cloud2: { sheet: 'nature 2', box: [0.280, 0.378, 0.092, 0.040], grow: 4 },
+  waveProp: { sheet: 'nature 2', box: [0.0, 0.734, 0.455, 0.206], exclude: [[0.10, 0.73, 0.14, 0.08]], stickerClose: 40, edgeRule: false },
+  wave: { sheet: 'nature 2', box: [0.0, 0.734, 0.494, 0.206], mode: 'scene' },
+
+  // --- veggie gang ----------------------------------------------------------
+  carrot: { sheet: 'veg', box: [0.497, 0.011, 0.386, 0.350], exclude: [[0.721, 0.254, 0.212, 0.103]] },
+  turnip: { sheet: 'veg', box: [0.006, 0.058, 0.253, 0.196] },
+  pumpkin: { sheet: 'veg', box: [0.721, 0.254, 0.212, 0.103] },
+  mushroom: { sheet: 'veg', box: [0.148, 0.315, 0.196, 0.129] },
+  watermelon: { sheet: 'veg', box: [0.759, 0.429, 0.174, 0.096] },
+  avocado: { sheet: 'veg', box: [0.541, 0.482, 0.193, 0.202] },
+  corn: { sheet: 'veg', box: [0.152, 0.499, 0.267, 0.219] },
+  grapes: { sheet: 'veg', box: [0.618, 0.672, 0.284, 0.310] },
+  birdPurple: { sheet: 'veg', box: [0.254, 0.764, 0.171, 0.218] },
+};
+
+// Close-up crops for the "little worlds" montage: [centreX, centreY, width]
+// as page fractions; height follows the 1920x860 screen band aspect.
+export const TEXTURES = {
+  sunflowerCore: { sheet: 'flowers', at: [0.69, 0.76, 0.26] },
+  ladybug: { sheet: 'creature 1', at: [0.515, 0.885, 0.15] },
+  treeCanopy: { sheet: 'creature 4', at: [0.36, 0.13, 0.38] },
+  lake: { sheet: 'nature', at: [0.20, 0.38, 0.30] },
+  beeStripes: { sheet: 'creature 3', at: [0.785, 0.305, 0.15] },
+  purpleWing: { sheet: 'flowers', at: [0.17, 0.875, 0.22] },
+  grapes: { sheet: 'veg', at: [0.77, 0.84, 0.22] },
+  carrot: { sheet: 'veg', at: [0.60, 0.25, 0.19] },
+  octopus: { sheet: 'creature 3', at: [0.71, 0.705, 0.17] },
+  fox: { sheet: 'creature 1', at: [0.13, 0.50, 0.19] },
+  jelly: { sheet: 'creature 1', at: [0.82, 0.73, 0.16] },
+  watermelon: { sheet: 'veg', at: [0.845, 0.475, 0.15] },
+  lavender: { sheet: 'flowers', at: [0.55, 0.15, 0.30] },
+  pumpkin: { sheet: 'veg', at: [0.826, 0.31, 0.17] },
+  waveProp: { sheet: 'nature 2', box: [0.0, 0.734, 0.455, 0.206], exclude: [[0.10, 0.73, 0.14, 0.08]], stickerClose: 40, edgeRule: false },
+  wave: { sheet: 'nature 2', at: [0.20, 0.84, 0.30] },
+  sunStripes: { sheet: 'nature 2', at: [0.18, 0.15, 0.17] },
+  pinkWing: { sheet: 'flowers', at: [0.37, 0.20, 0.15] },
+  pines: { sheet: 'nature', at: [0.68, 0.30, 0.30] },
+  corn: { sheet: 'veg', at: [0.29, 0.60, 0.19] },
+  owl: { sheet: 'creature 2', at: [0.47, 0.63, 0.13] },
+  avocadoHouse: { sheet: 'creature 4', at: [0.51, 0.88, 0.20] },
+  roses: { sheet: 'flowers', at: [0.46, 0.435, 0.17] },
+  waterfall: { sheet: 'nature 2', at: [0.73, 0.62, 0.30] },
+  fluffBird: { sheet: 'creature 1', at: [0.49, 0.40, 0.17] },
+};
