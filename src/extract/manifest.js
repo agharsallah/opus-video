@@ -126,7 +126,6 @@ export const TEXTURES = {
   watermelon: { sheet: 'veg', at: [0.845, 0.475, 0.15] },
   lavender: { sheet: 'flowers', at: [0.55, 0.15, 0.30] },
   pumpkin: { sheet: 'veg', at: [0.826, 0.31, 0.17] },
-  waveProp: { sheet: 'nature 2', box: [0.0, 0.734, 0.455, 0.206], exclude: [[0.10, 0.73, 0.14, 0.08]], stickerClose: 40, edgeRule: false },
   wave: { sheet: 'nature 2', at: [0.20, 0.84, 0.30] },
   sunStripes: { sheet: 'nature 2', at: [0.18, 0.15, 0.17] },
   pinkWing: { sheet: 'flowers', at: [0.37, 0.20, 0.15] },
