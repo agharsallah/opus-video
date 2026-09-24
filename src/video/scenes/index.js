@@ -3,7 +3,8 @@
 import * as morning from './morning.js';
 import * as rollcall from './rollcall.js';
 import * as montage from './montage.js';
+import * as garden from './garden.js';
 
-export const SCENES = [morning, rollcall, montage];
+export const SCENES = [morning, rollcall, montage, garden];
 export const DURATION = Math.max(...SCENES.map((s) => s.end));
 export const CUES = SCENES.flatMap((s) => s.cues).sort((p, q) => p.t - q.t);
