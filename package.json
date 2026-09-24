@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "description": "A playful video made from hand-drawn watercolor sketches, rendered and scored entirely in JavaScript.",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Abderrehmen Gharsallah",
   "scripts": {
     "segment": "node src/extract/segment.js",
     "extract": "node src/extract/export.js && node src/extract/textures.js",

@@ -104,3 +104,21 @@ src/audio/        synth, sfx, score, mixer
 build/            generated assets, stills, soundtrack (git-ignored)
 out/              the finished film
 ```
+
+## Credits & licence
+
+Drawings by **Oumaima Bourouis**.
+
+- **Code** (`src/`): [MIT](LICENSE).
+- **Artwork and media** (`input-pictures/`, `build/`, `out/`):
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). You may reuse and
+  adapt it, including commercially, but you must credit Oumaima Bourouis for
+  the drawings and link to this repository:
+
+  > Drawings by Oumaima Bourouis, from "A Day in the Sketchbook"
+  > (https://github.com/agharsallah/opus-video), licensed CC BY 4.0.
+
+- `video-examples/` are third-party reference videos and are **not** covered.
+  The fonts keep their own SIL OFL licence.
+
+See [LICENSE](LICENSE) for the full terms.
