@@ -1,0 +1,19 @@
+{
+  "name": "sketchbook-wakes-up",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A playful video made from hand-drawn watercolor sketches, rendered and scored entirely in JavaScript.",
+  "scripts": {
+    "segment": "node src/extract/segment.js",
+    "extract": "node src/extract/export.js && node src/extract/textures.js",
+    "audio": "node src/audio/render-audio.js",
+    "video": "node src/video/render.js",
+    "preview": "node src/video/render.js --sheet",
+    "build": "pnpm extract && pnpm audio && pnpm video"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.9",
+    "sharp": "^0.35.4"
+  }
+}
